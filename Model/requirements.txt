@@ -1,0 +1,9 @@
+flask
+python-dotenv
+langchain-groq
+langchain-huggingface
+langchain-community
+gunicorn
+pinecone-client
+sentence-transformers
+torch
