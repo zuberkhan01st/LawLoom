@@ -61,7 +61,7 @@ def initialize_components():
         # 6. Create retriever with score threshold
         retriever = vector_store.as_retriever(
             search_type="similarity_score_threshold",
-            search_kwargs={"k": 3, "score_threshold": 0.7}
+            search_kwargs={"k": 4, "score_threshold": 0.7}
         )
         
         # 7. Create QA chain

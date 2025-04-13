@@ -7,3 +7,4 @@ gunicorn
 pinecone-client
 sentence-transformers
 torch
+langchain-pinecone
