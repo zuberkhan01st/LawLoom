@@ -7,11 +7,13 @@ from langchain.chains import RetrievalQA
 import pinecone
 import os
 from dotenv import load_dotenv
+from flask_cors import CORS
 
 # Load environment variables
 load_dotenv()
 
 app = Flask(__name__)
+CORS(app)
 
 # Configuration
 INDEX_NAME = "indian-polity"
