@@ -124,7 +124,7 @@ const Chatbot = () => {
                           {source.metadata.source}
                           {source.metadata.article && ` • ${source.metadata.article}`}
                         </p>
-                        <div className="w-2 h-2 bg-gray-300 rounded-full animate-bounce">
+                        <div className="w-2 h-2 bg-gray-500 rounded-full animate-bounce">
                         <p className="text-gray-500 line-clamp-2">{source.content}</p>
                         </div>
                       </div>
@@ -140,8 +140,8 @@ const Chatbot = () => {
             <div className="bg-white border border-gray-200 rounded-lg px-4 py-3 max-w-xs">
               <div className="flex space-x-2">
                 <div className="w-2 h-2 bg-gray-500 rounded-full animate-bounce"></div>
-                <div className="w-2 h-2 bg-gray-300 rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
-                <div className="w-2 h-2 bg-gray-300 rounded-full animate-bounce" style={{ animationDelay: '0.4s' }}></div>
+                <div className="w-2 h-2 bg-gray-500 rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
+                <div className="w-2 h-2 bg-gray-500 rounded-full animate-bounce" style={{ animationDelay: '0.4s' }}></div>
               </div>
             </div>
           </div>
@@ -160,7 +160,7 @@ const Chatbot = () => {
                   setInput(question);
                   setTimeout(() => document.getElementById('chat-input')?.focus(), 0);
                 }}
-                className="text-left text-sm p-3 bg-gray-50 hover:bg-gray-100 rounded-lg border border-gray-200 transition-colors"
+                className="text-left text-sm p-3 bg-gray-500 hover:bg-gray-800 rounded-lg border border-gray-200 transition-colors"
               >
                 {question}
               </button>
@@ -175,7 +175,7 @@ const Chatbot = () => {
             value={input}
             onChange={(e) => setInput(e.target.value)}
             placeholder="Ask about Indian laws..."
-            className="flex-1 p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+            className="flex-1 p-3 rounded-lg border border-gray-500 text-black focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
             autoFocus
           />
           <button
